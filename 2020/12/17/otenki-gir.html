@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100%晴天女孩</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body onclick="auto_play()">
+    <audio src="music/bg_music.mp3" loop="true" autoplay class="music"></audio>
+    <div class="main">
+        <div class="input-box">
+            <div class="box1">
+                <span>¥0</span>
+                <img src="./img/stop.png" id="img-stop" onclick="music_stop()">
+                <img src="./img/play.png" id="img-play" onclick="music_play()">
+            </div>
+            <div class="box2">
+                因为下雨而困扰的你，100%的晴天女孩会为你带来阳光😄无论在什么地方...
+            </div>
+            <div class="box3">
+                <div class="input-name">
+                    <div>你的名字</div>
+                    <input type="text">
+                </div>
+                <div class="input-date">
+                    <div>日期：</div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="box4">
+                <div>希望天晴的地址：</div>
+                <input type="text" class="input-address">
+            </div>
+            <div class="box5">
+                <div>希望天晴的理由：</div>
+                <textarea class="input-reason"></textarea>
+            </div>
+            <div class="box6">
+                <button id="btn">提交请求</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
